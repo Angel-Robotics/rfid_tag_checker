@@ -3,7 +3,6 @@
 #include <SPI.h>
 #include <MFRC522.h>
 
-
 #define RST_PIN         25          // Configurable, see typical pin layout above
 #define SS_PIN          26         // Configurable, see typical pin layout above
 #define LCD_ADDR        0x27
@@ -89,7 +88,7 @@ void loop()
   }
 
   stringOne.toUpperCase();
-  lcd.setCursor(1, 0);
+  lcd.setCursor(0, 1);
   lcd.print(stringOne);
 
   // Halt PICC
